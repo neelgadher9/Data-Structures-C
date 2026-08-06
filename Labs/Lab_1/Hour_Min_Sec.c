@@ -4,6 +4,7 @@
 #include<stdio.h>
 
 void hourMinSec(int tsec){
+    
     int h=tsec/3600;
     int m=(tsec%3600)/60;
     int s=tsec%60;
