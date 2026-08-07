@@ -18,7 +18,6 @@ int recursePower(int n,int p){
     else{
         p--;
         return n*recursePower(n,p);
-        
     }
 }
 
