@@ -31,7 +31,7 @@ void main(){
     printf("Enter a power you want : ");
     scanf("%d",&p);
 
-    // powerOfNumber(n,p);
+    //int ans = powerOfNumber(n,p);
     int ans = recursePower(n,p);
     printf("%d raise to %d is %d",n,p,ans);
 }
