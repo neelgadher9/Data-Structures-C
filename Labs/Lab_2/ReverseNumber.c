@@ -6,9 +6,9 @@ int reverseNumber(int n){
     int rem1,reversed=0;
 
     while(n>=10){
-        rem1=n%10;
+        rem=n%10;
         reversed=reversed*10;
-        reversed=rem1*10+reversed;
+        reversed=rem*10+reversed;
         n=n/10;
     }
     reversed=reversed+n;
