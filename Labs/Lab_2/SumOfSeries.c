@@ -14,6 +14,16 @@ void sumOfSeries(int n){
     printf("Sum of the series when n = %d is %d",n,ans2);
 }
 
+void sumOfSeries2(int n){
+    int x=0,sum=0;
+
+    for(int i=1;i<=n;i++){
+        x=x+i;
+        sum=sum+x;
+    }
+    printf("Sum of the series when n = %d is %d",n,sum);
+}
+
 void main(){
     int n;
 
@@ -21,5 +31,6 @@ void main(){
     printf("Enter n : ");
     scanf("%d",&n);
 
-    sumOfSeries(n);
+    // sumOfSeries(n);
+    sumOfSeries2(n);
 }
