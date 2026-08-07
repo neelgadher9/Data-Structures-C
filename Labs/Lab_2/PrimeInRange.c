@@ -19,7 +19,7 @@ void primeInRange(int start,int end){
 void main(){
     int s,e;
 
-    printf("Displaying prime numbers in given range \n");
+    printf("Displaying prime numbers in given interval \n");
     printf("Enter Starting Range : ");
     scanf("%d",&s);
     printf("Enter Ending Range : ");
