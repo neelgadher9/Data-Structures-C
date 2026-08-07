@@ -2,17 +2,17 @@
 
 #include<stdio.h>
 
-void reverseNumber(int n){
-    int rem1,rem2=0;
+int reverseNumber(int n){
+    int rem1,reversed=0;
 
     while(n>=10){
         rem1=n%10;
-        rem2=rem2*10;
-        rem2=rem1*10+rem2;
+        reversed=reversed*10;
+        reversed=rem1*10+reversed;
         n=n/10;
     }
-    rem2=rem2+n;
-    printf("%d",rem2);
+    reversed=reversed+n;
+    return reversed;
 }
 
 void main(){
@@ -22,5 +22,6 @@ void main(){
     printf("Enter a number : ");
     scanf("%d",&n);
 
-    reverseNumber(n);
+    int reversed=reverseNumber(n);
+    printf("%d",reversed);
 }
