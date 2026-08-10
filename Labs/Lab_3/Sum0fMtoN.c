@@ -16,6 +16,7 @@
 //     }
 // }
 
+//Non-Array
 void sumOfMtoN(int m,int n){
     int sum=0;
     for(int i=m;i<=n;i++){
@@ -40,5 +41,6 @@ void main(){
     // int sum=sumOfMtoNbyArray(a,totalEle);
     // printf("Sum of %d to %d is %d",m,n,sum);
 
+    //Non-Array
     sumOfMtoN(m,n);
 }
