@@ -27,7 +27,6 @@ void main(){
     scanf("%d",&n);
 
     int a[n];
-
     readArray(a,n);
 
     int result=containsDuplicateOrNot(a,n);
