@@ -30,7 +30,7 @@ void main(){
     int n;
 
     printf("Pascal Triangle\n");
-    printf("Enter how much rows you want :");
+    printf("Enter how much rows you want : ");
     scanf("%d",&n);
 
     int a[n][n];
