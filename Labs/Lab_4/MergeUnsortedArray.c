@@ -8,16 +8,19 @@ void main()
 {
     int n1, n2;
 
-    printf("Enter Size O f Array1 : ");
+    printf("Enter Size of Array1 : ");
     scanf("%d", &n1);
-    printf("Enter Size O f Array2 : ");
+    printf("Enter Size of Array2 : ");
     scanf("%d", &n2);
 
     int arr1[n1], arr2[n2];
+    printf("\nEnter for Array 1 : \n");
     readArray(arr1, n1);
+    printf("Enter for Array 2 : \n");
     readArray(arr2, n2);
 
     int newArray[n1 + n2];
+    printf("\nMerged with sorting!\n");
     mergeUnsortedArray(newArray, arr1, arr2, n1, n2);
     displayArray(newArray, n1 + n2);
 }
@@ -26,7 +29,7 @@ void readArray(int array[], int n)
 {
     for (int i = 0; i < n; i++)
     {
-        printf("Enter a[%d] Element : ", i);
+        printf("Enter array[%d] Element : ", i);
         scanf("%d", &array[i]);
     }
     printf("\n");
