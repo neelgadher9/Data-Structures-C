@@ -33,7 +33,7 @@ void main()
 
     // Generate a random number between 0 and 100 (inclusive)
     int randomNumber = rand() % (N - 1);
-    printf("Your Word is : %s", wArray[randomNumber]);
+    printf("Your Word is : %s\n", wArray[randomNumber]);
     char annagramWord[20];
     printf("Enter its Anagram : ");
     scanf("%s", annagramWord);
