@@ -67,7 +67,6 @@ void annagramOrNot(char randomWord[20], char annagramWord[20])
         return;
     }
 }
-
 void sortWords(char word[])
 {
     int length = strlen(word);
