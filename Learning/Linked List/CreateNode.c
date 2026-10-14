@@ -1,5 +1,5 @@
 #include<stdio.h>
-
+#include<stdlib.h>//imp for malloc
 //Structure Schema
 struct Node{
     int data;  // it is data so it can be anything (int,float,char).
