@@ -15,7 +15,7 @@ void main(){  //for 3 nodes demo linked list.
     //Basically think about first->data=?
 
     first->data=89;
-    //what about second you store it like second->data , but what about link between first and second, here comes next in the game next pointer store the pointer of second like first->link=second;
+    //what about second?,yes you store it like second->data , but what about link between first and second, here comes next("struct Node * next") in the game next(first node's next) pointer store the pointer of second like first->link=second;
     first->next=second;
 
     second->data=23;
