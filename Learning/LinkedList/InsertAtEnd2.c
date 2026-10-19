@@ -27,14 +27,14 @@ int main(){
     struct Node * last=third;
 
     int data;
-    printf("Enter an element for insert at the beginning : ");
+    printf("Enter an element for insert at the Ending : ");
     scanf("%d",&data);
 
-    printf("Old Linked List Before Insert At First : ");
+    printf("Old Linked List Before Insert At Last : ");
     traversal(first);
     last=insertAtEnd(first,data);
 
-    printf("\nNew Linked List After Insert At First : ");
+    printf("\nNew Linked List After Insert At Last : ");
     traversal(first);
     return 0;
 }
