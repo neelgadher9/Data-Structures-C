@@ -8,7 +8,7 @@ struct Node{
 };
 
 void traversal(struct Node * ptr);
-struct Node * insertAtLast(int x,struct Node *last);
+void insertAtEnd(int data,struct Node * ptr);
 
 int main(){  
     struct Node * first,* second,* third;
@@ -24,7 +24,6 @@ int main(){
 
     third->data=21;
     third->next=NULL;
-    struct Node * last=third;
 
     int data;
     printf("Enter an element for insert at the Ending : ");
@@ -32,11 +31,22 @@ int main(){
 
     printf("Old Linked List Before Insert At Last : ");
     traversal(first);
-    last=insertAtLast(data,last);
+    insertAtEnd(data,first);
 
     printf("\nNew Linked List After Insert At Last : ");
     traversal(first);
     return 0;
+}
+
+void insertAtEnd(int data,struct Node * ptr){
+    while(ptr->next!=NULL){
+        ptr=ptr->next;
+    }
+    struct Node * newNode=(struct Node*)malloc(sizeof(struct Node));
+    newNode->data=data;
+    newNode->next=NULL;
+
+    ptr->next=newNode;
 }
 
 void traversal(struct Node * ptr){
@@ -45,12 +55,4 @@ void traversal(struct Node * ptr){
         ptr=ptr->next;
     }
     printf("NULL");
-}
-
-struct Node * insertAtLast(int data,struct Node *last){
-    struct Node * ptr=(struct Node *)malloc(sizeof(struct Node));
-    ptr->data=data;
-    ptr->next=NULL;
-    last->next=ptr;
-    return ptr;
 }
